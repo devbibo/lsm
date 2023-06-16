@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mainpage - LSM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Images/Logos/logo.png" type="image/x-icon">
+</head>
+<body>
+  <section id="main">
+    <h1 id="logo">
+      <img id="lsm" src="Images/Logos/textlogo.png" alt="lms">
+    </h1>
+    <div id="btns">
+       
+      <a href="#">Play</a>
+      <a href="#">Settings</a>
+      <a href="#">Skins</a>
+    
+    </div>
+
+    <div>
+      <img id="nprev" src="Images/Mainpage/NAhmedPrev.png" alt="nprev">
+      <img id="ahmedprev" src="Images/Mainpage/AhmedPrev.png" alt="ahmedprev">
+    </div>
+
+    <audio id="background-sound" src="Sounds/sound1.mp3" loop></audio>
+
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const backgroundSound = document.getElementById('background-sound');
+        backgroundSound.volume = 0.5; // Set the volume between 0 (muted) and 1 (maximum)
+        backgroundSound.play();
+      });
+    </script>
+    <button id="play-sound">Play Background Sound</button>
+    <script>
+      document.getElementById('play-sound').addEventListener('click', function() {
+        const backgroundSound = document.getElementById('background-sound');
+        backgroundSound.play();
+      });
+    </script>
+   
+  </section>
+</body>
+</html>
