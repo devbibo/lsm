@@ -1,0 +1,153 @@
+*{
+  font-family: montserrat;
+}
+
+
+body{
+  background-image: linear-gradient(to right, blue, violet);
+  text-align: center;
+}
+
+
+#lsm{
+  color: white;
+  width: 670px;
+  font-weight: 900;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  animation: pulse-right 10s infinite;
+
+}
+
+
+a{
+  color: rgb(220, 19, 217);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2em;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.4s ease;
+
+  
+}
+
+
+a:hover{
+  background-color: rgb(84, 86, 114);
+  color: white;
+}
+
+
+#ahmedprev {
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -webkit-optimize-contrast; /* Chrome, Safari */
+  image-rendering: pixelated; /* Future browsers */
+  width: 200px;
+  margin-left: 1000px;
+  margin-top: -100px;
+  animation: pulse-left 2s infinite;
+}
+
+#nprev {
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -webkit-optimize-contrast; /* Chrome, Safari */
+  image-rendering: pixelated; /* Future browsers */
+  width: 200px;
+  margin-right: 1000px;
+  margin-top: -200px;
+  animation: pulse-right 2s infinite;
+}
+
+@keyframes pulse-left {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-right {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+  #lsm{
+    color: white;
+    width: 230px;
+    font-weight: 900;
+    margin-left: 4px;
+    margin-top: 40px;
+    margin-bottom: 27px;
+  }
+
+  a{
+    font-size: 0.7em;
+    margin-left: 10px;
+  }
+
+ 
+ 
+ 
+ 
+ 
+ 
+  #nprev{
+    width: 230px;
+    margin-top: 40px;
+    margin-left: -30px;
+  }
+
+  #ahmedprev{
+    width: 230px;
+    margin-left: 165px;
+    margin-top: -140px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  #lsm{
+    color: white;
+    width: 250px;
+    font-weight: 900;
+    margin-left: 4px;
+    margin-top: 40px;
+    margin-bottom: 27px;
+  }
+
+  a{
+    font-size: 1em;
+    margin-left: 10px;
+  }
+
+  #nprev{
+    width: 230px;
+    margin-top: 120px;
+    margin-left: -30px;
+  }
+
+  #ahmedprev{
+    width: 230px;
+    margin-left: 165px;
+    margin-top: -100px;
+  }
+}
